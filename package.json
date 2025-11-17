@@ -1,0 +1,16 @@
+{
+  "name": "pactumjsestudos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js",
+    "test2": "mocha ./aula-02/aula2.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "mocha": "^11.7.5",
+    "pactum": "^3.8.0"
+  }
+}
