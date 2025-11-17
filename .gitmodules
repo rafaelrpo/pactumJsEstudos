@@ -1,0 +1,3 @@
+[submodule "ServeRest"]
+	path = ServeRest
+	url = https://github.com/ServeRest/ServeRest.git

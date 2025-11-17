@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js",
-    "test2": "mocha ./aula-02/aula2.js"
+    "test2": "mocha ./aula-02/aula2.js",
+    "test3": "mocha ./aula-03/aula3-POST.js"
   },
   "author": "",
   "license": "ISC",
