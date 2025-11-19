@@ -1,8 +1,25 @@
 const { spec } = require('pactum');
+const pactum = require('pactum');
 
 let userId;
 
 describe('SERVEREST - CRUD Usuários', () => {
+
+
+it('POST - Login com usuário válido', async () => {
+  await pactum
+    .spec()
+    .post('https://serverest.dev/login')
+    .withJson({
+      email: "fulano@qa.com",
+      password: "teste"
+    })
+    .expectStatus(200)
+    .expectJsonLike({
+      message: 'Login realizado com sucesso'
+    });
+});
+
 
   it('POST - Deve cadastrar usuário', async () => {
     userId = await spec()

@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js",
+    "test1": "mocha ./aula-01/aula1-POSTLogin.js",
     "test2": "mocha ./aula-02/aula2-GETId.js",
     "test3": "mocha ./aula-03/aula3-POST.js",
     "test4": "mocha ./aula-04/aula4-GETUsers.js",
