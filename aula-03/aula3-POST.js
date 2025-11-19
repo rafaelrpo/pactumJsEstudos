@@ -1,18 +1,22 @@
 const { spec } = require('pactum');
+let userId;
 
-it('Testando requisições com body', async () => {
-    await spec()
-    .post('http://localhost:3000/login')
-    .withHeaders({
-        'Content-Type': 'application/json'
-    })
-    .withBody({
-        "email": "fulano@qa.com",
-        "password": "teste"
-    })
-    .expectStatus(200)
-    .expectJsonLike({
-        "message": "Login realizado com sucesso"
-    })
-})
+describe('SERVEREST - CRUD Usuários', () => {
 
+  it('POST - Deve cadastrar um usuário', async () => {
+
+    userId = await spec()
+      .post('https://serverest.dev/usuarios')
+      .withBody({
+        nome: "Fulano Teste",
+        email: `email_${Date.now()}@qa.com`,
+        password: "1234",
+        administrador: "true"
+      })
+      .expectStatus(201)
+      .returns('_id');  // OBRIGATÓRIO
+
+    console.log("ID criado:", userId);
+  });
+
+});

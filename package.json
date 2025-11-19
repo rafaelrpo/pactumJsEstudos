@@ -4,8 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js",
-    "test2": "mocha ./aula-02/aula2.js",
-    "test3": "mocha ./aula-03/aula3-POST.js"
+    "test2": "mocha ./aula-02/aula2-GETId.js",
+    "test3": "mocha ./aula-03/aula3-POST.js",
+    "test4": "mocha ./aula-04/aula4-GETUsers.js",
+    "test5": "mocha ./aula-05/aula5-DeleteId.js",
+    "test6": "mocha ./aula-06/aula6-PUT.js",
+    "test7": "mocha ./aula-07/aula7-AllMethods.js"
   },
   "author": "",
   "license": "ISC",
