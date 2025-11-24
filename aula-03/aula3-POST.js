@@ -1,7 +1,6 @@
 const { spec } = require('pactum');
 let userId;
-
-describe('SERVEREST - CRUD Usuários', () => {
+describe('POST - Deve cadastrar um usuário', () => {
 
   it('POST - Deve cadastrar um usuário', async () => {
 
@@ -14,7 +13,7 @@ describe('SERVEREST - CRUD Usuários', () => {
         administrador: "true"
       })
       .expectStatus(201)
-      .returns('_id');  // OBRIGATÓRIO
+      .returns('_id'); 
 
     console.log("ID criado:", userId);
   });

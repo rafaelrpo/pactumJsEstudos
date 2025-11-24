@@ -21,7 +21,7 @@ it('PUT - Deve atualizar usuário', async () => {
     await spec()
       .put(`https://serverest.dev/usuarios/${userId}`)
       .withBody({
-        nome: "Fulano Atualizado",
+        nome: "Novo User Atualizado",
         email: `edit_${Date.now()}@qa.com`,
         password: "9876",
         administrador: "false"

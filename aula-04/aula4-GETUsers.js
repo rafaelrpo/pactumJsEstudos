@@ -9,6 +9,7 @@ describe('GET - Deve retornar lista de usuários', () => {
       .get(`${baseUrl}/usuarios`)
       .expectStatus(200)
       .expectJsonLike({
+        quantidade: 2,
         usuarios: []
       });
   });
