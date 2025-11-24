@@ -11,5 +11,5 @@ it('POST - Login com usuário válido', async () => {
     .expectStatus(200)
     .expectJsonLike({
       message: 'Login realizado com sucesso'
-    });
+    });
 });
