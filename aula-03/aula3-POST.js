@@ -14,7 +14,7 @@ describe('POST - Deve cadastrar um usuário', () => {
       })
       .expectStatus(201)
       .returns('_id'); 
-
+      
     console.log("ID criado:", userId);
   });
 

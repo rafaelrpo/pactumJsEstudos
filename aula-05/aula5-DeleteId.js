@@ -25,4 +25,6 @@ it('DELETE - Deve excluir usuário', async () => {
       .expectJsonLike({
         message: "Registro excluído com sucesso"
       });
+
+      console.log("Registro excluído com sucesso:", userId);
   });

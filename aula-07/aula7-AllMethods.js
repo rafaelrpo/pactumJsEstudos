@@ -62,6 +62,8 @@ it('POST - Login com usuário válido', async () => {
       .expectJsonLike({
         message: "Registro alterado com sucesso"
       });
+
+      console.log("Registro alterado com sucesso:", userId);
   });
 
 
@@ -72,6 +74,8 @@ it('POST - Login com usuário válido', async () => {
       .expectJsonLike({
         message: "Registro excluído com sucesso"
       });
+
+      console.log("Registro excluído com sucesso:", userId);
   });
 
 });
